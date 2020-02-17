@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="s">
+    <head>
+        <h1 align="center">Habitaciones</h1>
+
+    </head>
+    <body style="margin-left:5%">
+
+        <h4>Esta p&aacute;gina explica la interfaz de usuario para realizar la reserva de las habitaciones</h4>
+        <h3>General</h3>
+        <img src="general.PNG" style="margin-left: 2%"> </br>
+        <p>A simple vista se trata de una ventana la cual interactua con el usuario.</br>En la interfaz se identifican varias partes  </h6></p>
+        <ol>
+            <li>Datos del Cliente</li>
+            <li>Datos de la reserva</li>
+            <li>Botones</li>
+        </ol>
+        <b>Antes de empezar:</b>
+        <li>El usuario ver&aacute; que todos los campos a rellenar est&aacute;n deshabilitados excepto el DNI. Se utiliza para realizar una consulta a la base de datos,
+        por lo que se analiza el DNI introducido por si es un nuevo cliente o este ya existe en nuestra base de datos.</br></br></li>
+        <li>Si existe, se cargar&aacute;n los datos de la persona y su reserva que este almacenada en la base de datos. Tambien se habilitar&aacute;n todos los campos por si fuera el caso de que queramos modificar esa reserva.</br></li>
+        <li>Si no existe, se habilitar&aacute;n todos los campos para que el usuario pueda introducir los datos nuevos.</li>
+
+
+
+            <h3>1.DATOS DEL CLIENTE</h3>
+            <img src="cliente.PNG" style="margin-left: 2%"></br>
+            <p>Se le pide al usuario los datos bajo las siguientes condiciones:</br></br></p>
+            <li>DNI:  Se debe de introducir 8 n&uacute;meros y una letra. Se debe de pulsar la tecla intro para iniciar la consulta para continuar con el procedimiento.</br></br></li>
+            <li>Nombre: El nombre no puede tener n&uacute;meros, ya que de otro modo saltar&aacute; una alerta.</br></br></li>
+            <li>Direcci&oacute;n: Se debe indicar la direcci&oacute;n de la persona.</br></br></li>
+            <li>Localidad: Se debe indicar localidad de residencia habitual de la persona.</br></br></li>
+            <li>Provincia: El usuario debe de elegir la provincia de origen del cliente. En esta lista se establecen todas las provincias de España.</br></br></li>
+
+            <h3>2.DATOS DE LA RESERVA</h3>
+            <img src="reserva.PNG" style="margin-left: 2%"></br>
+            <li>Fechas de llegada y salida: Se debe de especificar el tiempo que durara la instancia en el hotel. En la primera casilla de debe de introducir </br>la fecha de llegada al hotel. Se deber&aacute; presionar el icono del calendario en el que aparecera un calendario para establecer la fecha.</br>En la casilla de salida se mostrar&aacute; el mismo calendario pero con los dias anteriores a la fecha de llegada deshabilitados, ya que es un incongruencia.</br></br></li>
+            <li>N&uacute;mero de Habitaciones: se deber&aacute; de seleccionar el numero de habitaciones   que se desean reservar. Se podra aumentar o decrementar pulsando los botones o directamente indicar cuantas habitaciones necesita.</br></br></li>
+            <li>Tipo de habitaciones:  se debe seleccionar entre los diferentes tipos de habitaci&oacute;n.</br></br></li>
+            <li>R&eacute;gimen: se debe indicar que tipo de r&eacute;gimen  quiere el cliente. Se debe escoger solo una opci&oacute;n.</br></br></li>
+            <li>Fumador: Se debe de indicar si la persona  que reserva fuma, con el fin de asignarle una habitacion habilitada.</br></br></li>
+            <h3>3.BOTONES</h3>
+            <img src="botones.PNG" style="margin-left: 2%"></br>
+            <li>Limpiar: El boton de limpiar elimina todos los datos introducidos y se deshabilitaran todos los campos excepto el DNI.</br></br></li>
+            <li>Aceptar: comprueba que todos los campos estan rellenos y comprueba su contenido para que no se produzcan errores a la hora de introducir y procesar los datos.</br> Si estan correctos se guardar&aacute;n los datos de la reserva. Si falla algun dato se indicara que campo tiene un dato erroneo.</br></br></li>
+            <li>Cancelar: Bot&oacute;n para no guardar los datos y cerrar la ventana, lo que nos llevara al menu principal.</br></br></li>
+
+            <h4>Enlaces</h4>
+            <ul>
+                <li><a href="https://github.com/ieslosmontecillos-di/di-t2-apphotel-bionic.git">Github.com</a></li>
+                <li><a href="https://www.oracle.com/corporate/">Oracle </a></li>
+            </ul>
+    </body>
+</html>

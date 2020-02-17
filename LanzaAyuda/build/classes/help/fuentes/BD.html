@@ -1,0 +1,71 @@
+&aacute;<!DOCTYPE html>
+<html lang="s" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Base de Datos </title>
+    <h1 align="center"><strong>Base de Datos</strong></h1>
+    <p margin="20px"> Esta p&aacute;gina de documentacion corresponde a la base de datos. La base de datos utiliza la herramienta mysql.</p>
+
+  <hr>
+  </head>
+  <body>
+    <h3>Tablas</h3>
+    <p> A cada clase de la base de datos se accedera desde el AppHotel utilizando MySQL. </p>
+    <ul>
+      <li><strong>Cliente</strong></li>
+      <li><strong>Provincias</strong></li>
+      <li><strong>ReservaSalon</strong></li>
+      <li><strong>ReservaHabitacion</strong></li>
+    </ul>
+
+    <h3>Tabla Cliente</h3>
+    <p>Esta clase identificar&aacute; a cada cliente que reserve alguna habitaci&oacute;n o sal&oacute;n por primera vez, para identificar a cada cliente utilizaremos el campo 'DNI'</p>
+    <ul>
+      <li><strong>DNI</strong>: N&uacute;mero entero, no se permite dejarlo vac&iacute;o y es la clave primaria.</li>
+      <li><strong>NOMBRE</strong>: Este campo se utilizara para el nombre y los apellidos del cliente, permite hasta 150 caracteres y no se puede dejar vac&iacute;o.</li>
+      <li><strong>TELEFONO</strong>: En este campo se guardara el telefono del cliente, permite 15 caracteres.</li>
+      <li><strong>DIRECCION</strong>: En este campo guardaremos la direccion de la vivienda de la persona, permite hasta 40 caracteres.</li>
+      <li><strong>LOCALIDAD</strong>: Lo utilizaremos para guardar la localidad donde vive, permite hasta 30 caracteres y no se puede dejar vac&iacute;o.</li>
+      <li><strong>PROVINCIA</strong>: Lo utilizaremos para guardar la provincia donde vive, se gardar&aacute; un n&uacute;mero entero que sera foreign key.</li>
+    </ul>
+
+    <h3>Tabla Provincia</h3>
+    <p>Esta clase se dedicar&aacute; a almacenar todas la provincias de España, para identificador esta clase utilizaremos el campo 'ID'.</p>
+    <ul>
+      <li><strong>ID</strong>: N&uacute;mero entero, no se puede dejar vac&iacute;o y es el identificador.</li>
+      <li><strong>CODIGO</strong>: Solo permite dos caracteres, este campo sera la abreviatura del nombre de la provincia.</li>
+      <li><strong>NOMBRE</strong>: Es el nombre de la provincia, solo permite veinte caracteres y no se puede dejar vac&iacute;o.</li>
+    </ul>
+
+    <h3>Tabla ReservaSalon</h3>
+    <p>Esta clase se dedicar&aacute; a guardar los datos de cada reserva del sal&oacute;n que hace cada cliente.</p>
+    <ul>
+      <li><strong>ID</strong>: N&uacute;mero entero, no permite estar vac&iacute;o, se genera solo y se utilizara como identificador de cada resera.</li>
+      <li><strong>DNI</strong>: Guardaremos el dni del cliente que realizo la reserva, permite 9 caracteres, es una foreign key a la clase cliente y campo dni.</li>
+      <li><strong>EVENTO</strong>: Guardaremos el tipo de evento, permite 15 caracteres.</li>
+      <li><strong>FECHA</strong>: Campo de tipo date, no se permite que este vac&iacute;o.</li>
+      <li><strong>N_PERSONAS</strong>: Guardaremos el n&uacute;mero de personas que entrara en la reserva, no se permite dejar el campo vac&iacute;o.</li>
+      <li><strong>COMIDA</strong>: Guardaremos el tipo de comida que se haya elegido, permite hasta 30 caracteres.</li>
+      <li><strong>HABITACIONES</strong>: Campo que permite un n&uacute;mero entero, se guardara el n&uacute;mero de habitaciones que necesita el cliente.</li>
+      <li><strong>N_DIAS</strong>: Guardaremos el n&uacute;mero de dias para la reserva.</li>
+    </ul>
+
+    <h3>Tabla ReservaHabitacion</h3>
+    <p>Esta clase se dedicar&aacute; a guardar los datos de cada reserva de la habitaci&oacute;n que hace cada cliente.</p>
+    <ul>
+      <li><strong>ID</strong>: N&uacute;mero entero, no permite estar vac&iacute;o, se genera solo y se utilizar&aacute; como identificador de cada resera.</li>
+      <li><strong>DNI</strong>: Guardaremos el dni del cliente que realiz&oacute; la reserva, permite 9 caracteres, es una foreign key a la clase cliente y campo dni.</li>
+      <li><strong>LLEGADA</strong>: Guarda la fecha en la que el cliente llegar&aacute; a la habitaci&oacute;n.</li>
+      <li><strong>SALIDA</strong>: Guarda la fecha en la que el cliente tendr&aacute; que salir de la habitaci&oacute;n.</li>
+      <li><strong>N_HABITACIONES</strong>: Campo que permite un n&uacute;mero entero, se guardar&aacute; el n&uacute;mero de habitaciones que necesita el cliente.</li>
+      <li><strong>TIPO</strong>: Guardaremos el tipo de habitaci&oacute;n, s&oacute;lo permite 15 caracteres.</li>
+      <li><strong>FUMADOR</strong>: Guardaremos si el cliente es fumador o no.</li>
+      <li><strong>REGIMEN</strong>: Guardamos el tipo de r&eacute;gimen que seleccione el cliente.</li>
+    </ul>
+
+    <h3>C&oacute;digo de la aplicaci&oacute;n</h3>
+    <ul>
+      <li><a href="https://github.com/ieslosmontecillos-di/di-t2-apphotel-bionic">GitHub</a></li>
+    </ul>
+  </body>
+</html>
